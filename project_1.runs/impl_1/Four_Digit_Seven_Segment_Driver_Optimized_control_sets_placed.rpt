@@ -1,0 +1,156 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Wed Apr 21 23:34:14 2021
+| Host         : CSE-P07-2168-01 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Four_Digit_Seven_Segment_Driver_Optimized_control_sets_placed.rpt
+| Design       : Four_Digit_Seven_Segment_Driver_Optimized
+| Device       : xc7a100t
+----------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    85 |
+| Unused register locations in slices containing registers |   185 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             129 |           45 |
+| No           | No                    | Yes                    |             410 |          203 |
+| No           | Yes                   | No                     |             120 |           39 |
+| Yes          | No                    | No                     |            2064 |         1977 |
+| Yes          | No                    | Yes                    |            1065 |          490 |
+| Yes          | Yes                   | No                     |              67 |           16 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------+----------------------------------+----------------------------------+------------------+----------------+
+|          Clock Signal         |           Enable Signal          |         Set/Reset Signal         | Slice Load Count | Bel Load Count |
++-------------------------------+----------------------------------+----------------------------------+------------------+----------------+
+|  outp_BUFG[7]                 |                                  | uar/IN6/Q_reg_7                  |                1 |              1 |
+|  p/IF_ID/genblk1[35].b/E[0]   |                                  |                                  |                1 |              2 |
+| ~p/EX_MEM/genblk1[72].b/stall |                                  |                                  |                1 |              2 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[12]  | uar/IN6/Q_reg_4                  |                2 |              2 |
+| ~s_clk                        | p/EX_MEM/genblk1[72].b/Q_reg_0   | uar/IN6/Q_reg_11                 |                1 |              2 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[15]  | uar/IN6/Q_reg_2                  |                3 |              4 |
+|  clk_IBUF_BUFG                | uar/IN5/bitcounter[3]_i_2__4_n_0 | uar/IN5/bitcounter[3]_i_1__4_n_0 |                1 |              4 |
+|  clk_IBUF_BUFG                | uar/IN6/bitcounter[3]_i_2__5_n_0 | uar/IN6/bitcounter[3]_i_1__5_n_0 |                1 |              4 |
+|  clk_IBUF_BUFG                | uar/IN7/sel                      | uar/IN7/bitcounter[3]_i_1__6_n_0 |                1 |              4 |
+|  clk_IBUF_BUFG                | uar/IN2/bitcounter[3]_i_2__1_n_0 | uar/IN2/bitcounter[3]_i_1__1_n_0 |                1 |              4 |
+|  clk_IBUF_BUFG                | uar/IN5/rxshiftreg[5]            |                                  |                1 |              4 |
+|  clk_IBUF_BUFG                | uar/IN5/rxshiftreg[5]            | uar/IN5/output_reset             |                1 |              4 |
+|  clk_IBUF_BUFG                | uar/IN4/bitcounter[3]_i_2__3_n_0 | uar/IN4/bitcounter[3]_i_1__3_n_0 |                1 |              4 |
+|  clk_IBUF_BUFG                | uar/IN1/bitcounter[3]_i_2__0_n_0 | uar/IN1/bitcounter[3]_i_1__0_n_0 |                1 |              4 |
+|  clk_IBUF_BUFG                | uar/IN1/rxshiftreg[0]            |                                  |                1 |              4 |
+|  clk_IBUF_BUFG                | uar/IN1/rxshiftreg[0]            | uar/IN1/output_reset             |                1 |              4 |
+|  clk_IBUF_BUFG                | uar/IN0/bitcounter[3]_i_2_n_0    | uar/IN0/bitcounter[3]_i_1_n_0    |                1 |              4 |
+|  clk_IBUF_BUFG                | uar/IN3/bitcounter[3]_i_2__2_n_0 | uar/IN3/bitcounter[3]_i_1__2_n_0 |                1 |              4 |
+| ~s_clk                        |                                  | uar/IN6/Q_reg[0]                 |                1 |              4 |
+|  s_clk                        | p/EX_MEM/genblk1[72].b/Q_reg_0   | uar/IN6/Q_reg_10                 |                5 |              5 |
+|  clk_IBUF_BUFG                | uar/IN6/rxshiftreg[0]            | uar/IN6/output_reset             |                1 |              5 |
+|  clk_IBUF_BUFG                | uar/IN4/rxshiftreg[5]            | uar/IN4/output_reset             |                1 |              5 |
+|  clk_IBUF_BUFG                | uar/IN2/rxshiftreg[5]            | uar/IN2/output_reset             |                1 |              5 |
+|  clk_IBUF_BUFG                | uar/IN0/rxshiftreg[5]            | uar/IN0/output_reset             |                2 |              6 |
+| ~s_clk                        |                                  | uar/IN6/Q_reg_10                 |                3 |              6 |
+|  clk_IBUF_BUFG                | uar/IN3/rxshiftreg[5]            | uar/IN3/output_reset             |                1 |              6 |
+|  s_clk                        |                                  | uar/IN6/Q_reg_11                 |                3 |              7 |
+| ~s_clk                        | p/EX_MEM/genblk1[72].b/Q_reg_0   | uar/IN6/Q_reg_9                  |                4 |              8 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[8]   | uar/IN6/Q_reg_5                  |                6 |              8 |
+|  clk_IBUF_BUFG                |                                  | uart_in_IBUF                     |                7 |              8 |
+|  clk_IBUF_BUFG                | uar/IN7/rxshiftreg[0]            |                                  |                2 |              8 |
+|  s_clk                        | p/EX_MEM/genblk1[72].b/Q_reg_0   | uar/IN6/Q_reg_7                  |                4 |              8 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[27]  | uar/IN6/Q_reg_0                  |                6 |             10 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[19]  | uar/IN6/Q_reg_1                  |                3 |             10 |
+| ~s_clk                        | p/EX_MEM/genblk1[72].b/Q_reg_0   | uar/IN6/Q_reg_10                 |                5 |             11 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[0]   | uar/IN6/Q_reg_6                  |                4 |             12 |
+|  clk_IBUF_BUFG                |                                  | uar/IN3/counter[0]_i_1__2_n_0    |                4 |             14 |
+|  clk_IBUF_BUFG                |                                  | uar/IN2/counter[0]_i_1__1_n_0    |                4 |             14 |
+|  clk_IBUF_BUFG                |                                  | uar/IN5/counter[0]_i_1__4_n_0    |                4 |             14 |
+|  clk_IBUF_BUFG                |                                  | uar/IN4/counter[0]_i_1__3_n_0    |                4 |             14 |
+|  clk_IBUF_BUFG                |                                  | uar/IN1/counter[0]_i_1__0_n_0    |                4 |             14 |
+|  clk_IBUF_BUFG                |                                  | uar/IN0/counter[0]_i_1_n_0       |                4 |             14 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[4]   | uar/IN6/Q_reg_6                  |                7 |             14 |
+|  clk_IBUF_BUFG                |                                  | uar/IN6/counter[0]_i_1__5_n_0    |                4 |             14 |
+|  clk_IBUF_BUFG                |                                  | uar/IN7/clear                    |                4 |             14 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[23]  | uar/IN6/Q_reg_0                  |               10 |             16 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[23]  | uar/IN6/Q_reg_1                  |               10 |             16 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[4]   | uar/IN6/Q_reg_5                  |                7 |             18 |
+| ~s_clk                        |                                  | uar/IN6/Q_reg_9                  |               12 |             18 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[0]   | uar/IN6/Q_reg_7                  |                9 |             20 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[19]  | uar/IN6/Q_reg_2                  |                6 |             22 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[27]  | uar/IN6/Q_reg[0]                 |               10 |             22 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[8]   | uar/IN6/Q_reg_4                  |               16 |             24 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[15]  | uar/IN6/Q_reg_3                  |               14 |             28 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[12]  | uar/IN6/Q_reg_3                  |               15 |             30 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[16]  | uar/IN6/Q_reg_2                  |               15 |             32 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[14]  | uar/IN6/Q_reg_3                  |               15 |             32 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[13]  | uar/IN6/Q_reg_3                  |                9 |             32 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[24]  | uar/IN6/Q_reg_0                  |               16 |             32 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[11]  | uar/IN6/Q_reg_4                  |               11 |             32 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[10]  | uar/IN6/Q_reg_4                  |               13 |             32 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[25]  | uar/IN6/Q_reg_0                  |               10 |             32 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[7]   | uar/IN6/Q_reg_5                  |               19 |             32 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[9]   | uar/IN6/Q_reg_4                  |               17 |             32 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[6]   | uar/IN6/Q_reg_5                  |               22 |             32 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[5]   | uar/IN6/Q_reg_5                  |               14 |             32 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[26]  | uar/IN6/Q_reg_0                  |               12 |             32 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[2]   | uar/IN6/Q_reg_6                  |                9 |             32 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[1]   | uar/IN6/Q_reg_6                  |               10 |             32 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[18]  | uar/IN6/Q_reg_2                  |                8 |             32 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[17]  | uar/IN6/Q_reg_2                  |               11 |             32 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[28]  | uar/IN6/Q_reg[0]                 |               14 |             32 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[22]  | uar/IN6/Q_reg_1                  |               18 |             32 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[29]  | uar/IN6/Q_reg[0]                 |               24 |             32 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[3]   | uar/IN6/Q_reg_6                  |               13 |             32 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[30]  | uar/IN6/Q_reg[0]                 |               22 |             32 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[21]  | uar/IN6/Q_reg_1                  |               12 |             32 |
+| ~outp_BUFG[7]                 | p/MEM_WB/genblk1[69].b/load[20]  | uar/IN6/Q_reg_1                  |               12 |             32 |
+| ~s_clk                        | p/EX_MEM/genblk1[72].b/Q_reg_0   | uar/IN6/Q_reg_7                  |               17 |             39 |
+| ~s_clk                        |                                  | uar/IN6/Q_reg_7                  |               31 |             55 |
+|  s_clk                        |                                  | uar/IN6/Q_reg_9                  |               46 |             96 |
+|  s_clk                        |                                  | uar/IN6/Q_reg_10                 |               46 |            100 |
+| ~s_clk                        |                                  | uar/IN6/Q_reg_8                  |               60 |            123 |
+|  clk_IBUF_BUFG                |                                  |                                  |               43 |            125 |
+|  outp_BUFG[7]                 | p/EX_MEM/genblk1[74].b/E[0]      |                                  |             1973 |           2048 |
++-------------------------------+----------------------------------+----------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     1 |
+| 2      |                     4 |
+| 4      |                    14 |
+| 5      |                     4 |
+| 6      |                     3 |
+| 7      |                     1 |
+| 8      |                     5 |
+| 10     |                     2 |
+| 11     |                     1 |
+| 12     |                     1 |
+| 14     |                     9 |
+| 16+    |                    40 |
++--------+-----------------------+
+
+

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Apr 21 23:13:42 2021
+# Process ID: 2400
+# Current directory: C:/Users/CSE.CAL/Desktop/MS3/project_1/project_1.runs/impl_1
+# Command line: vivado.exe -log Four_Digit_Seven_Segment_Driver_Optimized.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Four_Digit_Seven_Segment_Driver_Optimized.tcl -notrace
+# Log file: C:/Users/CSE.CAL/Desktop/MS3/project_1/project_1.runs/impl_1/Four_Digit_Seven_Segment_Driver_Optimized.vdi
+# Journal file: C:/Users/CSE.CAL/Desktop/MS3/project_1/project_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Four_Digit_Seven_Segment_Driver_Optimized.tcl -notrace
